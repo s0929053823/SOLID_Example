@@ -14,7 +14,7 @@
 
 
   <ItemGroup>
-    <Folder Include="Model\" />
+    <ProjectReference Include="..\SOLID_Model\SOLID_Model.csproj" />
   </ItemGroup>
 
 </Project>
