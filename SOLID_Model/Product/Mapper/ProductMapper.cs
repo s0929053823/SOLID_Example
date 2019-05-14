@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace SOLID_Model.Product
+namespace SOLID_Model.Product.Mapper
 {
     public class ProductMapper : IProductMapper
     {

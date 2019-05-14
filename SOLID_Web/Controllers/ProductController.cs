@@ -13,6 +13,11 @@ namespace SOLID_Web.Controllers
     public class ProductController : Controller
     {
 
+        private void SetUp()
+        {
+
+        }
+
         public string Index()
         {
             string FILE_NAME = Path.Combine( Directory.GetCurrentDirectory(),"wwwroot", "AppData","testfile.xml");
@@ -22,5 +27,14 @@ namespace SOLID_Web.Controllers
             return presenter.GetProductsDetails();
         }
 
+
+        public string Filter(string color)
+        {
+            string FILE_NAME = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "AppData", "testfile.xml");
+
+            var presenter = new ProductPresenter(FILE_NAME);
+
+            return presenter.GetProductsDetails();
+        }
     }
 }

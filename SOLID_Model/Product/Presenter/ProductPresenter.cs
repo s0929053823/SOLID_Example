@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID_Model.Product
+namespace SOLID_Model.Product.Presenter
 {
     public class ProductPresenter
     {
@@ -30,5 +30,6 @@ namespace SOLID_Model.Product
 
             return stringBuilder.ToString();
         }
+
     }
 }
