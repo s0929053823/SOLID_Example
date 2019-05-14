@@ -26,7 +26,7 @@ namespace SOLID_Model.Product
             StringBuilder stringBuilder = new StringBuilder();
 
             foreach (var product in products)
-                stringBuilder.Append(product.ToString());
+                stringBuilder.Append(product.ToString()+"\r\n");
 
             return stringBuilder.ToString();
         }
